@@ -18,16 +18,19 @@
     <!-- HTML Code Here -->
     <p>Click me</p>
     <p>hi</p>
-    <div></div>
+    <div class="any">
+        <p>Child of div</p>
+    </div>
     <a href="#"></a>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script>
         $(document).ready(function(){
+            $('.any > p').css('color','red');
             $('p, div, a').html("Selected");
             let len = $('p, div, a').length;
             alert(len);
-            $('p').hide();
+            $('a').hide();
         });
     </script>
 </body>
