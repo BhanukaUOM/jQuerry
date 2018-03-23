@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMCSoft Developers</title>
+    <meta name="author" content="BMCSoft">
+    <meta name="description" content="Basic jQuery">
+    <meta name="keywords" content="Web, Website, Developer, javascript, jQuery">
+
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+        <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- HTML Code Here -->
+    <p>Click me</p>
+    <p>hi</p>
+    <div></div>
+    <a href="#"></a>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('p, div, a').html("Selected");
+            let len = $('p, div, a').length;
+            alert(len);
+        });
+    </script>
+</body>
+</html>
