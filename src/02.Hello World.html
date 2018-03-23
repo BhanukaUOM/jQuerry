@@ -16,8 +16,16 @@
 
 <body>
     <!-- HTML Code Here -->
-    
-    
+    <p>Click me</p>
+
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            alert("Page Loaded!!");
+            $('p').click(function(){
+                alert("Clicked me!!");
+            });
+        });
+    </script>
 </body>
 </html>
